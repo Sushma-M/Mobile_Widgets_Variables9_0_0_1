@@ -16,13 +16,13 @@
     "excludedUrls" : null
   },
   "xssConfig" : {
-    "enforceXssSecurity" : false,
+    "enforceXssSecurity" : true,
     "policyFile" : "wm-xss-policies.xml",
-    "xssFilterStrategy" : "NONE",
+    "xssFilterStrategy" : "ENCODE",
     "policyType" : "IMPORT"
   },
   "csrfConfig" : {
-    "enforceCsrfSecurity" : false,
+    "enforceCsrfSecurity" : true,
     "headerName" : "X-WM-XSRF-TOKEN"
   },
   "corsConfig" : {

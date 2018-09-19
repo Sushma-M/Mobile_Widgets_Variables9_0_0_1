@@ -49,7 +49,7 @@
     <bean class="com.wavemaker.commons.model.security.XSSConfig" id="xssConfig">
         <property name="enforceXssSecurity" value="${general.xss.enabled}"/>
         <property name="policyFile" value="wm-xss-policies.xml"/>
-        <property name="xssFilterStrategy" value="NONE"/>
+        <property name="xssFilterStrategy" value="ENCODE"/>
     </bean>
     <bean class="com.wavemaker.commons.model.security.CorsConfig" id="corsConfig">
         <property name="enabled" value="${general.cors.enabled}"/>

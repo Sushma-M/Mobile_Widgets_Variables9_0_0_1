@@ -1,6 +1,8 @@
 <style id="Main.css">
-</style><script id="Main.js">/*global Application */
-Application.$controller('YoutubeController', ['$scope', '$sce', 'Utils', function ($scope, $sce, Utils) {
+</style>
+<script id="Main.js">
+/*global Application */
+Application.$controller('YoutubeController', ['$scope', '$sce', 'Utils', 'CONSTANTS', function ($scope, $sce, Utils, CONSTANTS) {
     "use strict";
 
     /* Define the property change handler. This function will be triggered when there is a change in the prefab property */
@@ -12,7 +14,7 @@ Application.$controller('YoutubeController', ['$scope', '$sce', 'Utils', functio
             }
 
             /* remove http or https from the url (to follow the protocol which the app is using) */
-            newVal = Utils.removeProtocol(newVal);
+            newVal = CONSTANTS.hasCordova ? newVal : Utils.removeProtocol(newVal);
 
             newVal = newVal.replace("/watch?v=", "/embed/");
             newVal += (newVal.indexOf("?") === -1 ? "?" : "&") + "wmode=transparent";
@@ -36,7 +38,12 @@ Application.$controller('YoutubeController', ['$scope', '$sce', 'Utils', functio
         // do nothing
     };
 }]);
-</script><script id="Main.variables.json">var _MainPage_Variables_ ={}
-</script><script id="Main.html" type="text/ng-template"><div style="height:100%;" data-ng-controller="YoutubeController">
-    <iframe ng-src="{{url}}" style="width:100%;height:100%" wmode="Opaque" data-youtube-frame-id="{{::$id}}"></iframe>
-</div></script>
+</script>
+<script id="Main.variables.json">
+var _MainPage_Variables_ ={ }
+</script>
+<script id="Main.html" type="text/ng-template">
+<div class="embed-responsive embed-responsive-16by9" data-ng-controller="YoutubeController"> 
+    <iframe class="embed-responsive-item" ng-src="{{url}}" wmode="Opaque" data-youtube-frame-id="{{::$id}}"></iframe> 
+</div>
+</script>

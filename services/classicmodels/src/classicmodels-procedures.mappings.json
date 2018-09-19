@@ -1,1 +1,24 @@
-{ }
+{
+  "pro" : {
+    "procedureString" : "CALL set_counter(?,?)",
+    "parameters" : [ {
+      "name" : "count",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "4234",
+      "required" : true,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "inc",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "2342",
+      "required" : true,
+      "parameterType" : "IN"
+    } ]
+  }
+}

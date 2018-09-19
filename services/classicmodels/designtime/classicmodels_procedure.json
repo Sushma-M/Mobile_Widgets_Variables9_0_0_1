@@ -1,1 +1,47 @@
-{ }
+{
+  "pro" : {
+    "name" : "pro",
+    "description" : "pro",
+    "version" : "V2",
+    "procedureString" : "CALL set_counter(:count,:inc)",
+    "parameters" : [ {
+      "name" : "count",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "4234",
+      "required" : true,
+      "parameterType" : "IN_OUT"
+    }, {
+      "name" : "inc",
+      "type" : "integer",
+      "list" : false,
+      "variableType" : "PROMPT",
+      "variableName" : "",
+      "testValue" : "2342",
+      "required" : true,
+      "parameterType" : "IN"
+    } ],
+    "request" : {
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
+    },
+    "response" : {
+      "typeRef" : "com.mobile_widgets_variables.classicmodels.models.procedure.ProResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "SINGLE",
+      "properties" : [ {
+        "name" : "count",
+        "fieldName" : "_count",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      } ]
+    }
+  }
+}

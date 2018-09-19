@@ -1,1 +1,4 @@
-{ }
+{
+  "com.wavemaker.runtime.$RestServiceInvokeFailed" : "Error while invoking rest service, Check logs for more information_",
+  "test" : "testFr"
+}

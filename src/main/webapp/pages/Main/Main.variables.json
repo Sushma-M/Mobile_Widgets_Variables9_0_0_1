@@ -187,6 +187,58 @@
     "saveInPhonegap" : false,
     "controller" : "Security"
   },
+  "serviceVariable6" : {
+    "_id" : "wm-serviceVariable6-wm.ServiceVariable-1537347870485",
+    "name" : "serviceVariable6",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.mobile_widgets_variables.classicmodels.models.query.EmpResponse",
+    "service" : "classicmodels",
+    "operation" : "executeEmp",
+    "operationId" : "QueryExecutionController_executeEmp",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : true,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "QueryExecution"
+  },
+  "serviceVariable7" : {
+    "_id" : "wm-serviceVariable7-wm.ServiceVariable-1537347890182",
+    "name" : "serviceVariable7",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "count",
+      "value" : "23423",
+      "type" : "integer"
+    }, {
+      "target" : "inc",
+      "value" : "4234",
+      "type" : "integer"
+    } ],
+    "type" : "com.mobile_widgets_variables.classicmodels.models.procedure.ProResponse",
+    "service" : "classicmodels",
+    "operation" : "executePro",
+    "operationId" : "ProcedureExecutionController_executePro",
+    "operationType" : "get",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "ProcedureExecution"
+  },
   "staticVariable1" : {
     "_id" : "wm-staticVariable1-wm.Variable-1490678911933",
     "name" : "staticVariable1",
