@@ -6,8 +6,8 @@ var _WM_APP_PROPERTIES = {
   "homePage" : "Main",
   "name" : "Mobile_Widgets_Variables",
   "platformType" : "MOBILE",
-  "securityEnabled" : "false",
-  "supportedLanguages" : "en",
+  "securityEnabled" : "true",
+  "supportedLanguages" : "en,de,en-us,fa,fr,hi",
   "timeFormat" : "",
   "type" : "APPLICATION",
   "version" : "1.0"

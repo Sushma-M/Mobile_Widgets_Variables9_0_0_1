@@ -1,0 +1,36 @@
+{
+  "endpointAddress" : "http://maps.googleapis.com/maps/api/directions/xml",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : {
+    "origin" : "Toronto",
+    "destination" : "Montreal",
+    "sensor" : "false"
+  },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : null,
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 200,
+    "headers" : {
+      "Content-Type" : [ "application/xml; charset=UTF-8" ],
+      "Date" : [ "Wed, 19 Sep 2018 08:31:36 GMT" ],
+      "Pragma" : [ "no-cache" ],
+      "Expires" : [ "Fri, 01 Jan 1990 00:00:00 GMT" ],
+      "Cache-Control" : [ "no-cache, must-revalidate" ],
+      "Vary" : [ "Accept-Language" ],
+      "Server" : [ "mafe" ],
+      "X-XSS-Protection" : [ "1; mode=block" ],
+      "X-Frame-Options" : [ "SAMEORIGIN" ],
+      "X-Cache" : [ "MISS from squid.pramati.com" ],
+      "X-Cache-Lookup" : [ "MISS from squid.pramati.com:8080" ],
+      "Via" : [ "1.0 squid.pramati.com (squid/3.1.23)" ],
+      "Connection" : [ "keep-alive" ]
+    },
+    "responseBody" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<DirectionsResponse>\n <status>OVER_QUERY_LIMIT</status>\n <error_message>Keyless access to Google Maps Platform is deprecated. Please use an API key with all your API calls to avoid service interruption. For further details please refer to http://g.co/dev/maps-no-account</error_message>\n</DirectionsResponse>\n",
+    "convertedResponse" : "{\"status\":\"OVER_QUERY_LIMIT\",\"error_message\":\"Keyless access to Google Maps Platform is deprecated. Please use an API key with all your API calls to avoid service interruption. For further details please refer to http://g.co/dev/maps-no-account\"}"
+  },
+  "proxy" : null
+}

@@ -1,0 +1,76 @@
+{
+  "name" : "classicmodels",
+  "entities" : [ {
+    "name" : "article_tags",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "customers",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "employees",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "offices",
+    "syncType" : "BUNDLED",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "orderdetails",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "orders",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "payments",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "productlines",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "products",
+    "syncType" : "BUNDLED",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  } ]
+}

@@ -1,1 +1,249 @@
-{"CaptureImage":{"_id":"wm-CaptureImage-wm.DeviceVariable-1490681927559","name":"CaptureImage","owner":"Page","category":"wm.DeviceVariable","dataBinding":[{"target":"allowImageEdit","value":true,"type":"boolean"},{"target":"imageQuality","value":80,"type":"number"},{"target":"imageEncodingType","value":"0","type":"list"},{"target":"correctOrientation","value":true,"type":"boolean"}],"service":"camera","operation":"captureImage","dataSet":{"imagePath":"resources/images/imagelists/default-image.png"},"imageQuality":80,"imageEncodingType":"0","allowImageEdit":false,"correctOrientation":true},"CaptureVideo":{"_id":"wm-deviceVariable1-wm.DeviceVariable-1490682419301","name":"CaptureVideo","owner":"Page","category":"wm.DeviceVariable","dataBinding":[],"service":"camera","operation":"captureVideo","dataSet":{"videoPath":""},"imageQuality":80,"imageEncodingType":"0","allowImageEdit":false,"correctOrientation":true},"staticVariable1":{"_id":"wm-staticVariable1-wm.Variable-1490678911933","name":"staticVariable1","owner":"Page","category":"wm.Variable","dataBinding":[],"dataSet":{"dataValue":"Camera Widget & Variable"},"type":"string","isList":false,"saveInPhonegap":false},"staticVariable2":{"_id":"wm-staticVariable2-wm.Variable-1490678939029","name":"staticVariable2","owner":"Page","category":"wm.Variable","dataBinding":[],"dataSet":{"dataValue":"Widget"},"type":"string","isList":false,"saveInPhonegap":false},"staticVariable3":{"_id":"wm-staticVariable3-wm.Variable-1490678978700","name":"staticVariable3","owner":"Page","category":"wm.Variable","dataBinding":[],"dataSet":{"dataValue":true},"type":"boolean","isList":false,"saveInPhonegap":false}}
+{
+  "CaptureImage" : {
+    "_id" : "wm-CaptureImage-wm.DeviceVariable-1490681927559",
+    "name" : "CaptureImage",
+    "owner" : "Page",
+    "category" : "wm.DeviceVariable",
+    "dataBinding" : [ {
+      "target" : "allowImageEdit",
+      "value" : true,
+      "type" : "boolean"
+    }, {
+      "target" : "imageQuality",
+      "value" : 80,
+      "type" : "number"
+    }, {
+      "target" : "imageEncodingType",
+      "value" : "0",
+      "type" : "list"
+    }, {
+      "target" : "correctOrientation",
+      "value" : true,
+      "type" : "boolean"
+    } ],
+    "service" : "camera",
+    "operation" : "captureImage",
+    "dataSet" : {
+      "imagePath" : "resources/images/imagelists/default-image.png"
+    },
+    "imageQuality" : 80,
+    "imageEncodingType" : "0",
+    "allowImageEdit" : false,
+    "correctOrientation" : true
+  },
+  "CaptureVideo" : {
+    "_id" : "wm-deviceVariable1-wm.DeviceVariable-1490682419301",
+    "name" : "CaptureVideo",
+    "owner" : "Page",
+    "category" : "wm.DeviceVariable",
+    "dataBinding" : [ ],
+    "service" : "camera",
+    "operation" : "captureVideo",
+    "dataSet" : {
+      "videoPath" : ""
+    },
+    "imageQuality" : 80,
+    "imageEncodingType" : "0",
+    "allowImageEdit" : false,
+    "correctOrientation" : true
+  },
+  "deviceVariable1" : {
+    "_id" : "wm-deviceVariable1-wm.DeviceVariable-1537346124737",
+    "name" : "deviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.DeviceVariable",
+    "dataBinding" : [ {
+      "target" : "fileType",
+      "value" : "pdf",
+      "type" : "list"
+    } ],
+    "service" : "file",
+    "operation" : "openFile",
+    "dataSet" : { }
+  },
+  "serviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1537347131257",
+    "name" : "serviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "origin",
+      "value" : "Toronto",
+      "type" : "string"
+    }, {
+      "target" : "destination",
+      "value" : "Montreal",
+      "type" : "string"
+    }, {
+      "target" : "sensor",
+      "value" : "false",
+      "type" : "string"
+    } ],
+    "type" : "googleapis.RootResponse",
+    "service" : "googleapis",
+    "operation" : "invoke",
+    "operationId" : "googleapis_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "RestServiceVirtual"
+  },
+  "serviceVariable2" : {
+    "_id" : "wm-serviceVariable2-wm.ServiceVariable-1537347141998",
+    "name" : "serviceVariable2",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "randomuser.RootResponse",
+    "service" : "randomuser",
+    "operation" : "invoke",
+    "operationId" : "randomuser_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "RestServiceVirtual"
+  },
+  "serviceVariable3" : {
+    "_id" : "wm-serviceVariable3-wm.ServiceVariable-1537347159824",
+    "name" : "serviceVariable3",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.mobile_widgets_variables.services.countryinfoservice.FullCountryInfoAllCountriesResponse",
+    "service" : "CountryInfoService",
+    "operation" : "fullCountryInfoAllCountries",
+    "operationId" : "CountryInfoServiceController_fullCountryInfoAllCountries",
+    "operationType" : "get",
+    "serviceType" : "SoapService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "CountryInfoService"
+  },
+  "serviceVariable4" : {
+    "_id" : "wm-serviceVariable4-wm.ServiceVariable-1537347193621",
+    "name" : "serviceVariable4",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "name",
+      "value" : "test",
+      "type" : "string"
+    } ],
+    "type" : "string",
+    "service" : "MyJavaService",
+    "operation" : "sampleJavaOperation",
+    "operationId" : "MyJavaController_sampleJavaOperation",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "MyJava"
+  },
+  "serviceVariable5" : {
+    "_id" : "wm-serviceVariable5-wm.ServiceVariable-1537347211530",
+    "name" : "serviceVariable5",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.wavemaker.runtime.security.WMCurrentUser",
+    "service" : "securityService",
+    "operation" : "getLoggedInUser",
+    "operationId" : "SecurityController_getLoggedInUser",
+    "operationType" : "get",
+    "serviceType" : "SecurityServiceType",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "Security"
+  },
+  "staticVariable1" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1490678911933",
+    "name" : "staticVariable1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : "Camera Widget & Variable"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariable2" : {
+    "_id" : "wm-staticVariable2-wm.Variable-1490678939029",
+    "name" : "staticVariable2",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : "Widget"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "staticVariable3" : {
+    "_id" : "wm-staticVariable3-wm.Variable-1490678978700",
+    "name" : "staticVariable3",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : true
+    },
+    "type" : "boolean",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "webSocketVariable1" : {
+    "_id" : "wm-webSocketVariable1-wm.WebSocketVariable-1537347176639",
+    "name" : "webSocketVariable1",
+    "owner" : "Page",
+    "category" : "wm.WebSocketVariable",
+    "dataBinding" : [ {
+      "target" : "RequestBody",
+      "value" : "test",
+      "type" : "websocket.RootRequest"
+    } ],
+    "service" : "websocket",
+    "operationId" : "websocket_WebSocketServiceVirtualController-invoke",
+    "dataSet" : [ ],
+    "type" : "websocket.RootResponse",
+    "isDefault" : false,
+    "isList" : false,
+    "startUpdate" : true,
+    "dataUpdateStrategy" : "refresh",
+    "dataLimit" : 20
+  }
+}

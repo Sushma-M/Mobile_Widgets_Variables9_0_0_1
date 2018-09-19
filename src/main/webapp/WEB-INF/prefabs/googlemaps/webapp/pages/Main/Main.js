@@ -437,17 +437,31 @@ Application.$controller('GooglemapsController', ['$scope', 'Utils', '$element', 
                 Utils.triggerFn(_deregisterFns.directions);
 
                 //watch for the directions
-                _deregisterFns.directions = $s.$watch(':: maps[0].directionsRenderers[0]', function(nv) {
+                _deregisterFns.directions = $s.$watch(':: maps[0].directionsRenderers', function(nv) {
                     //if there are no directions return back. nv is undefined between page navigation in studio mode
                     if (!nv) {
                         return;
                     }
-                    if (nv.directions) {
-                        var routeDetails;
-                        routeDetails = nv.directions.routes[0].legs[0];
-                        $s.distance  = routeDetails.distance.text;
-                        $s.duration  = routeDetails.duration.text;
-                    }
+                    var directionsObj = nv,
+                        distance = 0,
+                        duration = 0;
+                    //iterate throughout the object as there might be multiple waypoints and directions on the map.
+                    _.forEach(directionsObj, function(direction) {
+                        var routes = _.get(direction, 'directions.routes');
+                        _.forEach(routes, function(route) {
+                            var legs = route.legs;
+                            _.forEach(legs, function(leg) {
+                                distance += _.get(leg, 'distance.value') || 0;
+                                duration += _.get(leg, 'duration.value') || 0;
+                            })
+                        });
+                    });
+
+                    distance = distance ? _.round(distance/1000, 2) : '';
+                    duration = duration ? _.round(duration/3600, 2) : '';
+
+                    $s.distance = distance;
+                    $s.duration = duration;
                 });
             }
         }
@@ -520,9 +534,9 @@ Application.$controller('GooglemapsController', ['$scope', 'Utils', '$element', 
         function mapTypeOperations(newVal) {
             if ($s.widgetid) {
                 var wp = $s.widgetProps,
-                    markerProps  = ['onMarkerclick', 'onMarkerhover', 'onClick', 'radius', 'shade', 'info', 'icon', 'markertype', 'locations', 'lat', 'lng'],
-                    heatmapProps = ['locations', 'lat', 'lng', 'gradient', 'pixeldensity', 'opacity'],
-                    routeProps   = ['origin', 'destination', 'trafficlayer', 'transitlayer', 'travelmode', 'waypoints', 'stopover'],
+                    markerProps  = ['onMarkerclick', 'onMarkerhover', 'onClick', 'radius', 'shade', 'info', 'icon', 'markertype', 'locations', 'lat', 'lng', 'viewtype'],
+                    heatmapProps = ['locations', 'lat', 'lng', 'gradient', 'pixeldensity', 'opacity', 'viewtype'],
+                    routeProps   = ['origin', 'destination', 'trafficlayer', 'transitlayer', 'travelmode', 'waypoints', 'stopover', 'viewtype'],
                     commonProps  = ['name', 'tabindex', 'maptype', 'zoom', 'height', 'width', 'show', 'animation', 'onLoad', 'onDestroy', 'accessroles', 'class', 'margin', 'active', 'debugurl', 'showindevice'],
                     maptypeProps;
 

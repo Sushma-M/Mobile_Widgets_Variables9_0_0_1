@@ -1,0 +1,21 @@
+{
+  "endpointAddress" : "https://api.randomuser.me",
+  "method" : "GET",
+  "headers" : { },
+  "redirectEnabled" : true,
+  "requestBody" : "",
+  "queryParams" : { },
+  "authDetails" : null,
+  "contentType" : "application/json",
+  "multiParamInfoList" : null,
+  "sampleHttpResponseDetails" : {
+    "statusCode" : 0,
+    "headers" : {
+      "content-type" : [ "application/json; charset=utf-8" ],
+      "cache-control" : [ "no-cache" ]
+    },
+    "responseBody" : "{\"results\":[{\"gender\":\"male\",\"name\":{\"title\":\"mr\",\"first\":\"soren\",\"last\":\"louis\"},\"location\":{\"street\":\"1450 rue de l'abbé-patureau\",\"city\":\"versailles\",\"state\":\"côtes-d'armor\",\"postcode\":88779,\"coordinates\":{\"latitude\":\"3.9668\",\"longitude\":\"-40.8773\"},\"timezone\":{\"offset\":\"+2:00\",\"description\":\"Kaliningrad, South Africa\"}},\"email\":\"soren.louis@example.com\",\"login\":{\"uuid\":\"e9829f3e-87e9-46e1-b6c1-7b59f343b6d3\",\"username\":\"smallbird526\",\"password\":\"gryphon\",\"salt\":\"IB3Kz4gE\",\"md5\":\"a9f11d4f2d61a0575036253f5c35c6e9\",\"sha1\":\"3ac4c57c5ae7182d4a66392f28202ef81e736825\",\"sha256\":\"6730e84d9ca952679094da47975007942225bbe52f91adb76ef6b4d42b10ae5e\"},\"dob\":{\"date\":\"1982-03-21T16:03:43Z\",\"age\":36},\"registered\":{\"date\":\"2007-05-03T13:28:04Z\",\"age\":11},\"phone\":\"05-12-16-48-27\",\"cell\":\"06-22-69-42-05\",\"id\":{\"name\":\"INSEE\",\"value\":\"1NNaN62841192 93\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/60.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/60.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/60.jpg\"},\"nat\":\"FR\"}],\"info\":{\"seed\":\"cc87d30571703c0a\",\"results\":1,\"page\":1,\"version\":\"1.2\"}}",
+    "convertedResponse" : null
+  },
+  "proxy" : null
+}

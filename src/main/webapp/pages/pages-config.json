@@ -42,4 +42,8 @@
   "name" : "leftnav",
   "type" : "LEFTNAV",
   "params" : [ ]
+}, {
+  "name" : "medialist",
+  "type" : "PAGE",
+  "params" : [ ]
 } ]

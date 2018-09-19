@@ -1,0 +1,36 @@
+{
+  "name" : "hrdb",
+  "entities" : [ {
+    "name" : "DEPARTMENT",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "EMPLOYEE",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "USER",
+    "syncType" : "BUNDLED",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  }, {
+    "name" : "VACATION",
+    "syncType" : "APP_START",
+    "syncOptions" : {
+      "size" : 20,
+      "filter" : [ ],
+      "orderBy" : null
+    }
+  } ]
+}
