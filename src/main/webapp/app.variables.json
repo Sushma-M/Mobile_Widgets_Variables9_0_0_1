@@ -1,0 +1,147 @@
+{
+  "supportedLocale" : {
+    "owner" : "App",
+    "saveInPhonegap" : false,
+    "name" : "supportedLocale",
+    "_id" : "wm-wm.Variable1402640443182",
+    "category" : "wm.Variable",
+    "type" : "string",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "isList" : false
+  },
+  "goToPage_Barcode" : {
+    "owner" : "App",
+    "name" : "goToPage_Barcode",
+    "dataBinding" : [ ],
+    "_id" : "wm-goToPage_Barcode-wm.NavigationVariable-1491824219062",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Barcode",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Calendar" : {
+    "owner" : "App",
+    "name" : "goToPage_Calendar",
+    "dataBinding" : [ ],
+    "_id" : "wm-goToPage_Calendar-wm.NavigationVariable-1491824273355",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Calendar",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Main" : {
+    "owner" : "App",
+    "name" : "goToPage_Main",
+    "_id" : "wm-wm.NavigationVariable1389180517517",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Main"
+  },
+  "appInfo" : {
+    "owner" : "App",
+    "startUpdate" : true,
+    "service" : "device",
+    "name" : "appInfo",
+    "dataBinding" : [ ],
+    "_id" : "wm-getAppInfo-wm.DeviceVariable-1444134876543",
+    "category" : "wm.DeviceVariable",
+    "operation" : "getAppInfo",
+    "dataSet" : {
+      "appversion" : "X.X.X",
+      "cordovaversion" : "X.X.X"
+    }
+  },
+  "appNotification" : {
+    "owner" : "App",
+    "name" : "appNotification",
+    "dataBinding" : [ {
+      "type" : "list",
+      "value" : "Error",
+      "target" : "class"
+    }, {
+      "type" : "list",
+      "value" : "bottom right",
+      "target" : "toasterPosition"
+    } ],
+    "_id" : "wm-appErrorHandler-wm.NotificationVariable-1454664620943",
+    "category" : "wm.NotificationVariable",
+    "operation" : "toast"
+  },
+  "FileServiceUploadFile" : {
+    "owner" : "App",
+    "serviceType" : "JavaService",
+    "saveInPhonegap" : false,
+    "controller" : "File",
+    "autoUpdate" : true,
+    "startUpdate" : false,
+    "type" : "com.mobile_widgets_variables.fileservice.FileService.FileUploadResponse",
+    "isList" : false,
+    "inFlightBehavior" : "executeLast",
+    "designMaxResults" : 10,
+    "isDefault" : true,
+    "service" : "FileService",
+    "maxResults" : 20,
+    "name" : "FileServiceUploadFile",
+    "dataBinding" : [ ],
+    "operationId" : "FileController_uploadFile",
+    "_id" : "wm-FileServiceUploadFile-wm.ServiceVariable-1491824566061",
+    "category" : "wm.ServiceVariable",
+    "operation" : "uploadFile",
+    "dataSet" : [ ],
+    "transformationRequired" : false
+  },
+  "goToPage_file_upload" : {
+    "owner" : "App",
+    "name" : "goToPage_file_upload",
+    "dataBinding" : [ ],
+    "_id" : "wm-goToPage_file_upload-wm.NavigationVariable-1491824523798",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "file_upload",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_Device_Variables" : {
+    "owner" : "App",
+    "name" : "goToPage_Device_Variables",
+    "dataBinding" : [ ],
+    "_id" : "wm-goToPage_Device_Variables-wm.NavigationVariable-1491824427309",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Device_Variables",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "deviceInfo" : {
+    "owner" : "App",
+    "startUpdate" : true,
+    "service" : "device",
+    "name" : "deviceInfo",
+    "dataBinding" : [ ],
+    "_id" : "wm-deviceInfo-getDeviceInfo-wm.DeviceVariable-1444134852623",
+    "category" : "wm.DeviceVariable",
+    "operation" : "getDeviceInfo",
+    "dataSet" : {
+      "os" : "DEVICEOS",
+      "osVersion" : "X.X.X",
+      "deviceModel" : "DEVICEMODEL",
+      "connectionType" : "NONE",
+      "deviceUUID" : "DEVICEUUID"
+    }
+  },
+  "goToPage_Contact_device_variable" : {
+    "owner" : "App",
+    "name" : "goToPage_Contact_device_variable",
+    "dataBinding" : [ ],
+    "_id" : "wm-goToPage_Contact_device_variable-wm.NavigationVariable-1491824362652",
+    "category" : "wm.NavigationVariable",
+    "operation" : "gotoPage",
+    "pageName" : "Contact_device_variable",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  }
+}

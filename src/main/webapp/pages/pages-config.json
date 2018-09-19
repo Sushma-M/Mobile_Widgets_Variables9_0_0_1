@@ -1,0 +1,45 @@
+[ {
+  "name" : "Barcode",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Barcode_Partial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Calendar",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Camera_Partial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Common",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Contact_device_variable",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Device_Variables",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Login",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Main",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "file_upload",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "leftnav",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+} ]
